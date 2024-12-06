@@ -16,6 +16,9 @@
 		04D455C22D02DE15001DB809 /* _56NumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455C12D02DE15001DB809 /* _56NumberTests.swift */; };
 		04D455CC2D02DE15001DB809 /* _56NumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455CB2D02DE15001DB809 /* _56NumberUITests.swift */; };
 		04D455CE2D02DE15001DB809 /* _56NumberUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455CD2D02DE15001DB809 /* _56NumberUITestsLaunchTests.swift */; };
+		04D455E42D02E37E001DB809 /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455E22D02E37D001DB809 /* LCollectionViewCell.swift */; };
+		04D455E52D02E37E001DB809 /* LCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D455E32D02E37D001DB809 /* LCollectionViewCell.xib */; };
+		04D455E72D02E39E001DB809 /* CountdownProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455E62D02E39E001DB809 /* CountdownProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		04D455C72D02DE15001DB809 /* 456NumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 456NumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D455CB2D02DE15001DB809 /* _56NumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _56NumberUITests.swift; sourceTree = "<group>"; };
 		04D455CD2D02DE15001DB809 /* _56NumberUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _56NumberUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04D455E22D02E37D001DB809 /* LCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
+		04D455E32D02E37D001DB809 /* LCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCollectionViewCell.xib; sourceTree = "<group>"; };
+		04D455E62D02E39E001DB809 /* CountdownProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				04D455AA2D02DE0F001DB809 /* AppDelegate.swift */,
 				04D455AC2D02DE0F001DB809 /* SceneDelegate.swift */,
+				04D455E62D02E39E001DB809 /* CountdownProgressView.swift */,
 				04D455AE2D02DE0F001DB809 /* ViewController.swift */,
+				04D455E22D02E37D001DB809 /* LCollectionViewCell.swift */,
+				04D455E32D02E37D001DB809 /* LCollectionViewCell.xib */,
 				04D455B02D02DE0F001DB809 /* Main.storyboard */,
 				04D455B32D02DE14001DB809 /* Assets.xcassets */,
 				04D455B52D02DE14001DB809 /* LaunchScreen.storyboard */,
@@ -234,6 +243,7 @@
 				04D455B42D02DE14001DB809 /* Assets.xcassets in Resources */,
 				04D455B72D02DE14001DB809 /* Base in Resources */,
 				04D455B22D02DE0F001DB809 /* Base in Resources */,
+				04D455E52D02E37E001DB809 /* LCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +271,8 @@
 				04D455AF2D02DE0F001DB809 /* ViewController.swift in Sources */,
 				04D455AB2D02DE0F001DB809 /* AppDelegate.swift in Sources */,
 				04D455AD2D02DE0F001DB809 /* SceneDelegate.swift in Sources */,
+				04D455E42D02E37E001DB809 /* LCollectionViewCell.swift in Sources */,
+				04D455E72D02E39E001DB809 /* CountdownProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
