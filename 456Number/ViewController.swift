@@ -1,4 +1,5 @@
 import UIKit
+import StoreKit
 
 private let reuseIdentifier = "Cell"
 
@@ -108,11 +109,11 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
                 cell.L.text = "很赞"
             }
             cell.L.font = UIFont.systemFont(ofSize: 23, weight: .semibold)
-
+            cell.L.textColor = .black
         }
 
         
-        cell.backgroundColor = .systemGray6
+        cell.backgroundColor = .systemGray4
         return cell
     }
     
@@ -176,6 +177,9 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         }else if indexPath.section == 2{
             if indexPath.row == 0 {
                 self.restart()
+            }else{
+                SKStoreReviewController .requestReview()
+
             }
         }
         
