@@ -18,7 +18,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 
         self.loadData()
 
-        self.title = "请选择下列最大的数字"
+        self.title = "请找出下列最大的数字"
         
     }
     
@@ -96,6 +96,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             countdownProgressView.completionBlock = {
                 print("倒计时结束啦，在这里可以执行更多自定义操作")
                 // 可以在这里添加更多比如弹出提示框、执行动画等逻辑
+                self.finishGame()
+                
             }
 
             countdownProgressView.startCountdown()
@@ -158,21 +160,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
                 self.loadData()
                 self.mainCollectionView.reloadData()
             }else{
-                isfinish = true
-                self.mainCollectionView.reloadData()
-                
-                // 显示提示信息
-                let alert = UIAlertController(title: "挑战失败", message: "点击重新开始", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "好的", style: .default, handler: {_ in
-                    self.restart()
-                }))
-                alert.addAction(UIAlertAction(title: "取消", style: .default, handler: {_ in
-//                  self.restart()
-                }))
-                
-                self.present(alert, animated: true, completion: nil)
-                
-                
+                self.finishGame()
             }
         }else if indexPath.section == 2{
             if indexPath.row == 0 {
@@ -183,6 +171,22 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             }
         }
         
+    }
+    
+    func finishGame() {
+        isfinish = true
+        self.mainCollectionView.reloadData()
+        
+        // 显示提示信息
+        let alert = UIAlertController(title: "挑战失败", message: "点击重新开始", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "好的", style: .default, handler: {_ in
+            self.restart()
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: .default, handler: {_ in
+//                  self.restart()
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     
