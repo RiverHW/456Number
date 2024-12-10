@@ -64,7 +64,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             return 1
         }
         
-        return 2
+        return 3
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -107,8 +107,10 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
             
             if indexPath.row == 0 {
                 cell.L.text = "重新开始"
+            }else if indexPath.row == 1 {
+                cell.L.text = String.init(format: "关卡 : %ld", (lineItem - 1))
             }else{
-                cell.L.text = "很赞"
+                cell.L.text = "很棒"
             }
             cell.L.font = UIFont.systemFont(ofSize: 23, weight: .semibold)
             cell.L.textColor = .black
@@ -128,7 +130,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         }else if indexPath.section == 1{
             return CGSizeMake(view.bounds.size.width - space*2, 5)
         }
-        return CGSizeMake((view.bounds.size.width - 3*space)/2, 60)
+        return CGSizeMake((view.bounds.size.width - 4*space)/3 - 0.1, 60)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -165,9 +167,8 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         }else if indexPath.section == 2{
             if indexPath.row == 0 {
                 self.restart()
-            }else{
+            }else if indexPath.row == 2{
                 SKStoreReviewController .requestReview()
-
             }
         }
         
