@@ -1,0 +1,17 @@
+#Uncomment this line to define a global platform for your project
+platform :ios, '15.0'
+
+target '456Number' do
+  use_frameworks!
+
+#    pod 'LeanCloud'
+    pod 'Alamofire'
+ 
+ #   pod 'LeanCloud/Foundation' # 数据存储、短信、推送、云引擎等基础服务模块，必选
+
+    pod 'MarqueeLabel'
+
+ 
+    
+end
+

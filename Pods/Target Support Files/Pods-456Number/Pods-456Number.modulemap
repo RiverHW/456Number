@@ -1,0 +1,6 @@
+framework module Pods_456Number {
+  umbrella header "Pods-456Number-umbrella.h"
+
+  export *
+  module * { export * }
+}

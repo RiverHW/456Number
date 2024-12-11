@@ -19,6 +19,7 @@
 		04D455E42D02E37E001DB809 /* LCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455E22D02E37D001DB809 /* LCollectionViewCell.swift */; };
 		04D455E52D02E37E001DB809 /* LCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D455E32D02E37D001DB809 /* LCollectionViewCell.xib */; };
 		04D455E72D02E39E001DB809 /* CountdownProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D455E62D02E39E001DB809 /* CountdownProgressView.swift */; };
+		5584ED18EB59FC5879AB8B6B /* Pods_456Number.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7099C539298DA4D428AC6128 /* Pods_456Number.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		04D455E22D02E37D001DB809 /* LCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D455E32D02E37D001DB809 /* LCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D455E62D02E39E001DB809 /* CountdownProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownProgressView.swift; sourceTree = "<group>"; };
+		7099C539298DA4D428AC6128 /* Pods_456Number.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_456Number.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F336028C049C5A13B737C37 /* Pods-456Number.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-456Number.debug.xcconfig"; path = "Target Support Files/Pods-456Number/Pods-456Number.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0F3B5C23CDDFCE4DF1FC36 /* Pods-456Number.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-456Number.release.xcconfig"; path = "Target Support Files/Pods-456Number/Pods-456Number.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5584ED18EB59FC5879AB8B6B /* Pods_456Number.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,8 @@
 				04D455C02D02DE15001DB809 /* 456NumberTests */,
 				04D455CA2D02DE15001DB809 /* 456NumberUITests */,
 				04D455A82D02DE0F001DB809 /* Products */,
+				D78894E0F6028FBDFA0DB426 /* Pods */,
+				B17EE8059DD6EAE2742D734E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +143,23 @@
 			path = 456NumberUITests;
 			sourceTree = "<group>";
 		};
+		B17EE8059DD6EAE2742D734E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7099C539298DA4D428AC6128 /* Pods_456Number.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D78894E0F6028FBDFA0DB426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F336028C049C5A13B737C37 /* Pods-456Number.debug.xcconfig */,
+				DA0F3B5C23CDDFCE4DF1FC36 /* Pods-456Number.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04D455D12D02DE15001DB809 /* Build configuration list for PBXNativeTarget "456Number" */;
 			buildPhases = (
+				47E6795996741FDCF7CC8D64 /* [CP] Check Pods Manifest.lock */,
 				04D455A32D02DE0F001DB809 /* Sources */,
 				04D455A42D02DE0F001DB809 /* Frameworks */,
 				04D455A52D02DE0F001DB809 /* Resources */,
+				2762D2CBA37A2B52AF728FE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +288,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2762D2CBA37A2B52AF728FE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-456Number/Pods-456Number-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-456Number/Pods-456Number-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-456Number/Pods-456Number-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47E6795996741FDCF7CC8D64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-456Number-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04D455A32D02DE0F001DB809 /* Sources */ = {
@@ -449,13 +517,17 @@
 		};
 		04D455D22D02DE15001DB809 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F336028C049C5A13B737C37 /* Pods-456Number.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = L2TY6X7TU6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 456Number/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "456找最大数字";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.456Number.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.456Number.wei152;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,13 +549,17 @@
 		};
 		04D455D32D02DE15001DB809 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0F3B5C23CDDFCE4DF1FC36 /* Pods-456Number.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = L2TY6X7TU6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 456Number/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "456找最大数字";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -495,7 +571,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.456Number.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.456Number.wei152;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
